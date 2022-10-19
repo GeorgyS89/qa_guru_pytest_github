@@ -10,7 +10,7 @@ from selene.support import by
 def test_parametrized_for_desktop(browser_height, browser_width):
     browser.config.window_height = browser_height
     browser.config.window_width = browser_width
-    if browser.config.window_width != 1920:
+    if browser.config.window_width != 1080:
         pytest.skip("This is a test for desktop use!")
     browser.open("https://github.com")
     browser.element(by.link_text("Sign in")).click()
